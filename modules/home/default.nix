@@ -3,6 +3,7 @@
 {
   imports = [
     ./git.nix
+    ./vscode.nix
   ];
 
   home.username = username;

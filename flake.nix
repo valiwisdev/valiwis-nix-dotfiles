@@ -21,6 +21,10 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
+
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+
+    mac-app-util.url = "github:hraban/mac-app-util";
   };
 
   outputs = inputs@{
@@ -29,6 +33,8 @@
     nix-homebrew,
     homebrew-core,
     homebrew-cask,
+    nix-vscode-extensions,
+    mac-app-util,
     ...
   }:
   let
@@ -67,6 +73,7 @@
           homebrew.taps = builtins.attrNames config.nix-homebrew.taps;
         })
 
+        mac-app-util.darwinModules.default
         home-manager.darwinModules.home-manager
         {
           users.users.${username}.home = home;
@@ -74,7 +81,9 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit username; };
           home-manager.users.${username} = import ./modules/home;
+          home-manager.sharedModules = [mac-app-util.homeManagerModules.default];
         }
+
       ];
     };
   };

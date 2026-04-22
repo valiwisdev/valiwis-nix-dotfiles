@@ -18,6 +18,9 @@
     uv
   ];
 
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [nix-vscode-extensions.overlays.default];
+
   programs.zsh.enable = true;
 
   system.defaults.dock.autohide = true;
