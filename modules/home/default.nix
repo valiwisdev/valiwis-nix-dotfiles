@@ -10,9 +10,7 @@
 
   home.username = username;
   home.stateVersion = "25.11";
-  home.packages = with pkgs; [
-    ghostty-bin
-  ];
+  home.packages = with pkgs; [];
   programs.home-manager.enable = true;
 
 }
