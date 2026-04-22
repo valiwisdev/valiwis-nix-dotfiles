@@ -5,7 +5,7 @@
     enableZshIntegration = true;
     
     settings = {
-      theme = "/Applications/Ghostty.app/Contents/Resources/ghostty/theme/Catppuccin Mocha";
+      theme = "Catppuccin Frappe";
       font-size = 18;
     };
 
