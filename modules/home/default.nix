@@ -6,7 +6,7 @@
   ];
 
   home.username = username;
-  home.homeDirectory = "/Users/${username}";
+  home.homeDirectory = "/Users/valiwis";
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [

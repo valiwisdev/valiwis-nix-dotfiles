@@ -14,6 +14,9 @@
   networking.hostName = hostname;
   networking.localHostName = localHostName;
 
+  users.users.${username}.home = "/Users/valiwis";
+  system.primaryUser = username;
+
   environment.systemPackages = with pkgs; [
     git
     vim
