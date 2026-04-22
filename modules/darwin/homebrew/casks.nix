@@ -1,5 +1,6 @@
 [
   "docker-desktop"
+  "ghostty"
   "spotify"
   "discord"
   "microsoft-edge"
