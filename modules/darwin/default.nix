@@ -11,8 +11,6 @@
   system.stateVersion = 6;
   system.primaryUser = username;
 
-  users.users.${username}.home = "/Users/valiwis";
-
   networking.hostName = hostname;
   networking.localHostName = localHostName;
 
