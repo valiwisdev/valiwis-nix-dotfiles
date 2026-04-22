@@ -1,7 +1,7 @@
 {
   programs.git = {
     enable = true;
-    userName = "valiwisdev";
-    userEmail = "v.caro@uniandes.edu.co";
+    user.name = "valiwisdev";
+    user.email = "v.caro@uniandes.edu.co";
   };
 }
