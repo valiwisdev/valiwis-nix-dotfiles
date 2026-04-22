@@ -36,6 +36,7 @@
     username = "valiwis";
     hostname = "valiwis";
     localHostName = "valiwis-mac-mini";
+    home = "/Users/${username}";
   in {
     darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
       inherit system;
