@@ -5,7 +5,7 @@
     enableZshIntegration = true;
     
     settings = {
-      theme = "Catppuccin Frappe";
+      theme = "Catppuccin Mocha";
       font-size = 18;
     };
 
