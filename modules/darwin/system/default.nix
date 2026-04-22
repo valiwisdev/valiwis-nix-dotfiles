@@ -4,6 +4,7 @@
 	imports = [
 		./dock.nix
 		./environment.nix
+		./fonts.nix
 		./programs.nix
 	];
 

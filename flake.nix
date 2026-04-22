@@ -17,10 +17,6 @@
       flake = false;
     };
 
-    homebrew-cask-fonts = {
-      url = "github:homebrew/homebrew-cask-fonts";
-      flake = false;
-    };
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     mac-app-util.url = "github:hraban/mac-app-util";
   };
@@ -31,7 +27,6 @@
     nix-homebrew,
     homebrew-core,
     homebrew-cask,
-    homebrew-cask-fonts,
     nix-vscode-extensions,
     mac-app-util,
     ...
@@ -62,7 +57,6 @@
             taps = {
               "homebrew/homebrew-core" = homebrew-core;
               "homebrew/homebrew-cask" = homebrew-cask;
-              "homebrew/homebrew-cask-fonts" = homebrew-cask-fonts;
             };
             mutableTaps = false;
           };
