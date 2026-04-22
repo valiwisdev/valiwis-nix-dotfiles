@@ -46,12 +46,6 @@
                 ms-toolsai.vscode-jupyter-cell-tags
                 ms-toolsai.vscode-jupyter-slideshow
                 ms-vscode-remote.remote-containers
-                ms-vscode.cmake-tools
-                ms-vscode.cpp-devtools
-                ms-vscode.cpptools
-                ms-vscode.cpptools-extension-pack
-                ms-vscode.cpptools-themes
-                ms-vscode.makefile-tools
                 ms-vscode.vscode-typescript-next
                 openai.chatgpt
                 redhat.vscode-yaml
