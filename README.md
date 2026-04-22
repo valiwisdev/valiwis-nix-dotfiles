@@ -1,6 +1,6 @@
 # Valiwis Nix Dotfiles
 
-Declarative macOS setup powered by `nix-darwin`, `home-manager`, and `nix-homebrew`.
+Declarative macOS setup powered by Determinate Nix, `nix-darwin`, `home-manager`, and `nix-homebrew`.
 
 ![nix](https://img.shields.io/badge/Nix-Flakes-5277C3?style=for-the-badge&logo=nixos&logoColor=white)
 ![platform](https://img.shields.io/badge/Platform-macOS-black?style=for-the-badge&logo=apple)
@@ -15,7 +15,7 @@ xcode-select --install
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 git clone https://github.com/<your-username>/nix-dotfiles.git
 cd nix-dotfiles
-nix run nix-darwin#darwin-rebuild -- switch --flake .#valiwis
+nix run https://flakehub.com/f/nix-darwin/nix-darwin/0#darwin-rebuild -- switch --flake .#valiwis
 ```
 
 ---
@@ -44,7 +44,7 @@ cd nix-dotfiles
 ### 4) Bootstrap your system
 
 ```sh
-nix run nix-darwin#darwin-rebuild -- switch --flake .#valiwis
+nix run https://flakehub.com/f/nix-darwin/nix-darwin/0#darwin-rebuild -- switch --flake .#valiwis
 ```
 
 ---
