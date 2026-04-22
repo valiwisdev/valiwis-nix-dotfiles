@@ -41,7 +41,7 @@
     darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
       inherit system;
       specialArgs = {
-        inherit inputs system username hostname localHostName;
+        inherit inputs system username hostname localHostName home;
       };
 
       modules = [

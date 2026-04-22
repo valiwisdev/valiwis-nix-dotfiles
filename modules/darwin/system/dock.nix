@@ -1,4 +1,4 @@
-{ username, ... }:
+{ home, ... }:
 
 {
   system.defaults.dock = {
@@ -12,11 +12,11 @@
       "/Applications/Discord.app"
       "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
-      "/Users/${username}/Applications/Home Manager Apps/Visual Studio Code.app"
+      "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
     ];
 
     persistent-others = [
-      "/Users/${username}/Downloads"
+      "${home}/Downloads"
     ];
 
   };
