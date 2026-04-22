@@ -1,5 +1,5 @@
 {
-  description = "macOS with nix-darwin, Home Manager, nix-homebrew, and modular Homebrew/Home config";
+  description = "Valiwis' Nix dotfiles for macOS";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
