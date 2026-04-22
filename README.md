@@ -15,7 +15,7 @@ xcode-select --install
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 git clone https://github.com/<your-username>/nix-dotfiles.git
 cd nix-dotfiles
-nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#valiwis
+nix run nix-darwin#darwin-rebuild -- switch --flake .#valiwis
 ```
 
 ---
@@ -44,7 +44,7 @@ cd nix-dotfiles
 ### 4) Bootstrap your system
 
 ```sh
-nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#valiwis
+nix run nix-darwin#darwin-rebuild -- switch --flake .#valiwis
 ```
 
 ---

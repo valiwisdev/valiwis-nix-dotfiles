@@ -4,7 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
 
-    nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/3";
+    determinate.inputs.nixpkgs.follows = "nixpkgs";
+
+    nix-darwin.url = "https://flakehub.com/f/nix-darwin/nix-darwin/0";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 
     home-manager.url = "github:nix-community/home-manager/release-25.11";
@@ -24,6 +27,7 @@
   };
 
   outputs = inputs@{
+    determinate,
     nix-darwin,
     home-manager,
     nix-homebrew,
@@ -45,6 +49,11 @@
       };
 
       modules = [
+        determinate.darwinModules.default
+        {
+          determinateNix.enable = true;
+        }
+
         ./modules/darwin
 
         nix-homebrew.darwinModules.nix-homebrew
