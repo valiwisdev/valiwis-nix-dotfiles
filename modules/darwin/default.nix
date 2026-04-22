@@ -1,4 +1,4 @@
-{ pkgs, username, hostname, localHostName, system, ... }:
+{ pkgs, inputs, username, hostname, localHostName, system, ... }:
 
 {
   imports = [
@@ -19,7 +19,7 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [nix-vscode-extensions.overlays.default];
+  nixpkgs.overlays = [inputs.nix-vscode-extensions.overlays.default];
 
   programs.zsh.enable = true;
 
