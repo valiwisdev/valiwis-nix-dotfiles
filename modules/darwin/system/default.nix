@@ -14,6 +14,15 @@
 	networking.localHostName = localHostName;
   nixpkgs.hostPlatform = system;
 	nixpkgs.config.allowUnfree = true;
-	nixpkgs.overlays = [ inputs.nix-vscode-extensions.overlays.default ];
+	nixpkgs.overlays = [
+		inputs.nix-vscode-extensions.overlays.default
+		(final: prev: {
+			python313Packages = prev.python313Packages.overrideScope (pyFinal: pyPrev: {
+				ffmpeg-python = pyPrev.ffmpeg-python.overrideAttrs (_: {
+					doCheck = false;
+				});
+			});
+		})
+	];
 
 }
