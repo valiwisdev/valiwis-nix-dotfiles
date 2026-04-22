@@ -25,7 +25,6 @@
                 dsznajder.es7-react-js-snippets
                 esbenp.prettier-vscode
                 fastapilabs.fastapi-vscode
-                github.copilot-chat
                 github.vscode-github-actions
                 icrawl.discord-vscode
                 jnoortheen.nix-ide
