@@ -9,11 +9,7 @@
   home.homeDirectory = "/Users/valiwis";
   home.stateVersion = "25.11";
 
-  home.packages = with pkgs; [
-    ripgrep
-    fd
-    jq
-  ];
+  home.packages = with pkgs; [];
 
   programs.home-manager.enable = true;
   programs.zsh.enable = true;

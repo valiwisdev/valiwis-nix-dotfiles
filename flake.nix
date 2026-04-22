@@ -1,7 +1,9 @@
 {
-  description = "macOS with nix-darwin, Home Manager, nix-homebrew, and modular Homebrew/Home config";
+  description = "Valiwis macOS config";
 
   inputs = {
+    determinate.url = "https://flakehub.com/f/DeterminateSystems/determinate/3";
+
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
 
     nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
@@ -24,6 +26,7 @@
   };
 
   outputs = inputs@{
+    determinate,
     nix-darwin,
     home-manager,
     nix-homebrew,
@@ -32,18 +35,24 @@
     ...
   }:
   let
-    system = "aarch64-darwin"; 
+    system = "aarch64-darwin"; # change to x86_64-darwin on Intel
     username = "valiwis";
-    hostname = "valiwis";
-    localHostName = "valiwis-mac-mini";
+    flakeName = "valiwis";
+    localHostname = "valiwis-mac-mini"; 
   in {
-    darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
+    darwinConfigurations.${flakeName} = nix-darwin.lib.darwinSystem {
       inherit system;
       specialArgs = {
-        inherit inputs system username hostname localHostName;
+        inherit inputs system username localHostname;
       };
 
       modules = [
+        inputs.determinate.darwinModules.default
+
+        ({ ... }: {
+          determinateNix.enable = true;
+        })
+
         ./modules/darwin
 
         nix-homebrew.darwinModules.nix-homebrew
@@ -51,8 +60,9 @@
           nix-homebrew = {
             enable = true;
             user = username;
-            enableRosetta = true; 
+            enableRosetta = system == "aarch64-darwin";
             autoMigrate = true;
+
             taps = {
               "homebrew/homebrew-core" = homebrew-core;
               "homebrew/homebrew-cask" = homebrew-cask;
