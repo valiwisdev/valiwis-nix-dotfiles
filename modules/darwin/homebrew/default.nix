@@ -7,7 +7,7 @@
     masApps = import ./masApps.nix;
 
     onActivation.cleanup = "uninstall";
-    onActivation.autoUpdate = false;
-    onActivation.upgrade = false;
+    onActivation.autoUpdate = true;
+    onActivation.upgrade = true;
   };
 }
