@@ -11,7 +11,7 @@
       "/Applications/Discord.app"
       "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
-      "/Applications/Visual Studio Code.app"
+      "/Applications/Home Manager Apps/Visual Studio Code.app"
     ];
 
   };
