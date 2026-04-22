@@ -1,3 +1,4 @@
+{ username, ... }:
 
 {
   system.defaults.dock = {
@@ -11,7 +12,7 @@
       "/Applications/Discord.app"
       "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
-      "/Applications/Home Manager Apps/Visual Studio Code.app"
+      "/Users/${username}/Applications/Home Manager Apps/Visual Studio Code.app"
     ];
 
   };
