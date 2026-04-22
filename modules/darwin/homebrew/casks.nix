@@ -3,4 +3,6 @@
   "spotify"
   "discord"
   "microsoft-edge"
+  "chatgpt"
+  "notion"
 ]
