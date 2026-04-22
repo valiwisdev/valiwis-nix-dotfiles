@@ -3,11 +3,12 @@
     enable = true;
     package = null;
     settings = {
-      theme = "ghostty";
+      theme = "catppuccin-mocha";
+      font-size = 16;
     };
 
     themes = {
-      ghostty = {
+      catppuccin-mocha = {
         palette = [
           "0=#45475a"
           "1=#f38ba8"
