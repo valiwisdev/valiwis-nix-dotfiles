@@ -28,11 +28,11 @@
         ];
         background = "1e1e2e";
         foreground = "cdd6f4";
-        "cursor-color" = "f5e0dc";
-        "cursor-text" = "11111b";
-        "selection-background" = "353749";
-        "selection-foreground" = "cdd6f4";
-        "split-divider-color" = "313244";
+        cursor-color = "f5e0dc";
+        cursor-text = "11111b";
+        selection-background = "353749";
+        selection-foreground = "cdd6f4";
+        split-divider-color = "313244";
       };
     };
   };
