@@ -16,7 +16,6 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     mac-app-util.url = "github:hraban/mac-app-util";
   };
@@ -32,52 +31,53 @@
     ...
   }:
   let
-    system = "aarch64-darwin"; 
+    system = "aarch64-darwin";
     username = "valiwis";
     hostname = "valiwis";
     localHostName = "valiwis-mac-mini";
     home = "/Users/${username}";
   in {
-    darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
-      inherit system;
-      specialArgs = {
-        inherit inputs system username hostname localHostName home;
-      };
+    darwinConfigurations = {
+      ${hostname} = nix-darwin.lib.darwinSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs system username hostname localHostName home;
+        };
 
-      modules = [
-        ./modules/darwin
+        modules = [
+          ./modules/darwin
 
-        nix-homebrew.darwinModules.nix-homebrew
-        {
-          nix-homebrew = {
-            enable = true;
-            user = username;
-            enableRosetta = true; 
-            autoMigrate = true;
-            taps = {
-              "homebrew/homebrew-core" = homebrew-core;
-              "homebrew/homebrew-cask" = homebrew-cask;
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              enable = true;
+              user = username;
+              enableRosetta = true;
+              autoMigrate = true;
+              taps = {
+                "homebrew/homebrew-core" = homebrew-core;
+                "homebrew/homebrew-cask" = homebrew-cask;
+              };
+              mutableTaps = false;
             };
-            mutableTaps = false;
-          };
-        }
+          }
 
-        ({ config, ... }: {
-          homebrew.taps = builtins.attrNames config.nix-homebrew.taps;
-        })
+          ({ config, ... }: {
+            homebrew.taps = builtins.attrNames config.nix-homebrew.taps;
+          })
 
-        mac-app-util.darwinModules.default
-        home-manager.darwinModules.home-manager
-        {
-          users.users.${username}.home = home;
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit username; };
-          home-manager.users.${username} = import ./modules/home;
-          home-manager.sharedModules = [mac-app-util.homeManagerModules.default];
-        }
-
-      ];
+          mac-app-util.darwinModules.default
+          home-manager.darwinModules.home-manager
+          {
+            users.users.${username}.home = home;
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit username; };
+            home-manager.users.${username} = import ./modules/home;
+            home-manager.sharedModules = [ mac-app-util.homeManagerModules.default ];
+          }
+        ];
+      };
     };
   };
 }
