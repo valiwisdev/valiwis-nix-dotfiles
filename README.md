@@ -13,8 +13,8 @@ Declarative macOS setup powered by `nix-darwin`, `home-manager`, and `nix-homebr
 ```sh
 xcode-select --install
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
-git clone https://github.com/<your-username>/nix-dotfiles.git
-cd nix-dotfiles
+git clone https://github.com/valiwisdev/valiwis-nix-dotfiles.git
+cd valiwis-nix-dotfiles
 nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#valiwis
 ```
 
@@ -37,8 +37,8 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 ### 3) Clone this repository
 
 ```sh
-git clone https://github.com/<your-username>/nix-dotfiles.git
-cd nix-dotfiles
+git clone https://github.com/valiwisdev/valiwis-nix-dotfiles.git
+cd valiwis-nix-dotfiles
 ```
 
 ### 4) Bootstrap your system
