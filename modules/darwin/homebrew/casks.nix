@@ -5,5 +5,4 @@
   "microsoft-edge"
   "chatgpt"
   "notion"
-  "ghostty"
 ]
