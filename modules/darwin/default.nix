@@ -7,7 +7,4 @@
   ];
 
   nix.enable = false; 
-  networking.hostName = hostname;
-  networking.localHostName = localHostName;
-  programs.zsh.enable = true;
 }

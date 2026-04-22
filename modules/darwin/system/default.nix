@@ -4,7 +4,9 @@
 	imports = [
 		./dock.nix
 		./environment.nix
+		./networking.nix
 		./nixpkgs.nix
+		./programs.nix
 	];
 
 	system.stateVersion = 6;
