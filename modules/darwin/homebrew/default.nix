@@ -6,7 +6,7 @@
     casks = import ./casks.nix;
     masApps = import ./masApps.nix;
 
-    onActivation.cleanup = "uninstall";
+    onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
   };
