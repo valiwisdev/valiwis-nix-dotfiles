@@ -1,7 +1,9 @@
 {
   programs.ghostty = {
     enable = true;
+    enableZshIntegration = true;
     package = null;
+    
     settings = {
       theme = "catppuccin-mocha";
       font-size = 18;
