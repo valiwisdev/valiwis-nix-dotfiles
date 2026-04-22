@@ -6,6 +6,7 @@
 		./environment.nix
 		./fonts.nix
 		./programs.nix
+		./terminal-theme.nix
 	];
 
 	system.stateVersion = 6;
