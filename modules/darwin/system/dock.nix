@@ -16,7 +16,7 @@
     ];
 
     persistent-others = [
-      "${username}/Downloads"
+      "/Users/${username}/Downloads"
     ];
 
   };
