@@ -12,7 +12,11 @@
       "/Applications/Discord.app"
       "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
-      "/${username}/Applications/Home Manager Apps/Visual Studio Code.app"
+      "/Users/${username}/Applications/Home Manager Apps/Visual Studio Code.app"
+    ];
+
+    persistent-others = [
+      "/${username}/Downloads"
     ];
 
   };
