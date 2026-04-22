@@ -5,7 +5,7 @@
     ./homebrew
   ];
 
-  nix.enabled = false; 
+  nix.enable = false; 
 
   nixpkgs.hostPlatform = system;
   system.stateVersion = 6;
