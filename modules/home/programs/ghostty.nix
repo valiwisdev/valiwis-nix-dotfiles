@@ -2,7 +2,7 @@
   programs.ghostty = {
     enable = true;
     enableZshIntegration = true;
-    package = null;
+    package = pkgs.ghostty;
     
     settings = {
       theme = "catppuccin-mocha";
