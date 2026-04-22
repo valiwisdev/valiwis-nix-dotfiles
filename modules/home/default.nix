@@ -2,15 +2,14 @@
 
 {
   imports = [
-    ./git.nix
-    ./vscode.nix
+    ./programs/git.nix
+    ./programs/vscode.nix
+    ./programs/zsh.nix
   ];
 
   home.username = username;
   home.stateVersion = "25.11";
-
   home.packages = with pkgs; [];
-
   programs.home-manager.enable = true;
-  programs.zsh.enable = true;
+
 }
