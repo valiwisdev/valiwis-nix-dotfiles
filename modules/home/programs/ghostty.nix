@@ -4,7 +4,7 @@
     package = null;
     settings = {
       theme = "catppuccin-mocha";
-      font-size = 16;
+      font-size = 18;
     };
 
     themes = {
