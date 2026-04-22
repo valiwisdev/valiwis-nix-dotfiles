@@ -5,6 +5,8 @@
     ./homebrew
   ];
 
+  nix.enabled = false; 
+
   nixpkgs.hostPlatform = system;
   system.stateVersion = 6;
   system.primaryUser = username;
