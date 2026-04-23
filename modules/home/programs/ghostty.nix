@@ -1,7 +1,9 @@
+{ pkgs, ... }:
+
 {
   programs.ghostty = {
     enable = true;
-    package = null;
+    package = pkgs.ghostty-bin;
     enableZshIntegration = true;
     
     settings = {
