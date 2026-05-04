@@ -14,7 +14,6 @@
         "node"
         "npm"
         "yarn"
-        "pnpm"
         "vscode"
       ];
     };
