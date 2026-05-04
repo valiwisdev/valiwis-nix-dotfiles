@@ -16,6 +16,8 @@
       background-blur = 10;
       unfocused-split-opacity = 0.6;
       window-padding-balance = true;
+      macos-titlebar-style = "native";
+      macos-option-as-alt = true;
     };
   };
 
