@@ -17,6 +17,15 @@
         "vscode"
       ];
     };
+
+    initContent = ''
+      export HISTTIMEFORMAT="[%F %T] "
+      setopt HIST_FIND_NO_DUPS
+      setopt HIST_IGNORE_ALL_DUPS
+      export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+      export NVM_DIR="$HOME/.nvm"
+      source $(brew --prefix nvm)/nvm.sh
+    '';
   };
 
   catppuccin.zsh-syntax-highlighting = {
