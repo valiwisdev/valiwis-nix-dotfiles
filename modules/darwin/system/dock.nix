@@ -8,6 +8,7 @@
 
     persistent-apps = [
       "/System/Applications/App Store.app"
+      "/System/Applications/Apps.app"
       "/Applications/Microsoft Edge.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
