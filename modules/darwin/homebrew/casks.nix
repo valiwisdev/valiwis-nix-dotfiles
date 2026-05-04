@@ -9,4 +9,5 @@
   "raycast"
   "obs"
   "wireshark-app"
+  "kiro-cli"
 ]
