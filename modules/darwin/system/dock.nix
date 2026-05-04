@@ -11,6 +11,7 @@
       "/Applications/Microsoft Edge.app"
       "/Applications/Microsoft Word.app"
       "/Applications/Microsoft Excel.app"
+      "/Applications/Canva.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
       "/Applications/ChatGPT.app"
@@ -19,6 +20,7 @@
       "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
       "/Applications/Docker.app"
       "/Applications/Ghostty.app"
+      "/Applications/Kiro CLI.app"
     ];
 
     persistent-others = [
