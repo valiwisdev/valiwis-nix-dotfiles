@@ -7,7 +7,7 @@
     showhidden = true; 
 
     persistent-apps = [
-      "/Applications/App Store.app"
+      "/System/Applications/App Store.app"
       "/Applications/Microsoft Edge.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
