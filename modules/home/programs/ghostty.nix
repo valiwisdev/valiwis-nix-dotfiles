@@ -7,7 +7,7 @@
     enableZshIntegration = true;
     
     settings = {
-      font-size = 20;
+      font-size = 18;
       font-thicken = true;
       font-family = "JetBrainsMono Nerd Font";
       window-padding-x = 8;
