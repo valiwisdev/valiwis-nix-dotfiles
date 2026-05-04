@@ -7,6 +7,15 @@
       enable = true;
       plugins = [
         "git"
+        "docker"
+        "docker-compose"
+        "python"
+        "pip"
+        "node"
+        "npm"
+        "yarn"
+        "pnpm"
+        "vscode"
       ];
     };
   };
