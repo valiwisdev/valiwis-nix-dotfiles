@@ -7,7 +7,7 @@
     enableZshIntegration = true;
     
     settings = {
-      font-size = 22;
+      font-size = 20;
       font-thicken = true;
       window-padding-x = 8;
       window-padding-y = 4;
