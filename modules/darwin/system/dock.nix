@@ -14,7 +14,7 @@
       "/Applications/Canva.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
-      "/Applications/WhatsApp Messenger.app"
+      "/Applications/WhatsApp.app"
       "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
       "/Applications/OBS.app"
