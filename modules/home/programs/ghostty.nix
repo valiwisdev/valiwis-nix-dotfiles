@@ -3,7 +3,7 @@
 {
   programs.ghostty = {
     enable = true;
-    package = pkgs.ghostty-bin;
+    package = null;
     enableZshIntegration = true;
     
     settings = {

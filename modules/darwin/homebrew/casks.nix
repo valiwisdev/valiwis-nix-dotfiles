@@ -5,4 +5,7 @@
   "microsoft-edge"
   "chatgpt"
   "notion"
+  "ghostty"
+  "raycast"
+  "obs"
 ]
