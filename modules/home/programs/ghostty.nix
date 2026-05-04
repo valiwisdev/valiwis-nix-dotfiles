@@ -7,7 +7,6 @@
     enableZshIntegration = true;
     
     settings = {
-      theme = "light:catppuccin-mocha,dark:catppuccin-mocha";
       font-size = 20;
       font-thicken = true;
       font-family = "JetBrainsMono Nerd Font";
