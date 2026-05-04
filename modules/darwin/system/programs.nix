@@ -5,6 +5,7 @@
       enableFzfCompletion = true;
       enableFzfHistory = true;
       enableSyntaxHighlighting = true;
+      enableAutosuggestions = true;
     };
   };
 }
