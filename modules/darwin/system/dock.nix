@@ -14,7 +14,7 @@
       "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
       "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
-      "${home}/Applications/Home Manager Apps/Ghostty.app"
+      "/Applications/Ghostty.app"
     ];
 
     persistent-others = [
