@@ -8,7 +8,6 @@
     
     settings = {
       font-size = 18;
-      font-family = JetBrainsMonoNerdFont;
       font-thicken = true;
       macos-titlebar-style = tabs;
       window-padding-x = 8;
