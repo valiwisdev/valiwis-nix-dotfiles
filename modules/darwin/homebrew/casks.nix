@@ -8,4 +8,5 @@
   "ghostty"
   "raycast"
   "obs"
+  "wireshark-app"
 ]
