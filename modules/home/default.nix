@@ -6,7 +6,8 @@
     ./programs/ghostty.nix
     ./programs/vscode.nix
     ./programs/zsh.nix
-  ]
+  ];
+
 
   home.username = username;
   home.stateVersion = "25.11";
