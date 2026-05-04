@@ -3,9 +3,12 @@
     enable = true;
     syntaxHighlighting.enable = true;
 
-    plugins = [
-      git
-    ];
+    ohMyZsh = {
+      enable = true;
+      plugins = [
+        "git"
+      ];
+    };
   };
 
   catppuccin.zsh-syntax-highlighting = {
