@@ -9,7 +9,6 @@
     settings = {
       font-size = 18;
       font-thicken = true;
-      macos-titlebar-style = tabs;
       window-padding-x = 8;
       window-padding-y = 4;
       background-opacity = 0.96;
