@@ -21,6 +21,7 @@
   };
 
   outputs = inputs@{
+    self,
     nix-darwin,
     home-manager,
     nix-homebrew,
