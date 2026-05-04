@@ -7,9 +7,12 @@
     enableZshIntegration = true;
     
     settings = {
-      theme = "Catppuccin Mocha";
       font-size = 18;
     };
+  };
 
+  catppuccin.ghostty = {
+    enable = true;
+    flavor = "mocha";
   };
 }

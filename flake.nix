@@ -17,6 +17,7 @@
     };
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     mac-app-util.url = "github:hraban/mac-app-util";
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = inputs@{
@@ -27,6 +28,7 @@
     homebrew-cask,
     nix-vscode-extensions,
     mac-app-util,
+    catppuccin,
     ...
   }:
   let
@@ -73,7 +75,7 @@
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit username; };
             home-manager.users.${username} = import ./modules/home;
-            home-manager.sharedModules = [ mac-app-util.homeManagerModules.default ];
+            home-manager.sharedModules = [ mac-app-util.homeManagerModules.default catppuccin.homeModules.catppuccin ];
           }
         ];
       };
