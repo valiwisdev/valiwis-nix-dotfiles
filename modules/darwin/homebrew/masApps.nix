@@ -1,5 +1,4 @@
 {
  "Microsoft Word" = 462054704;
  "Microsoft Excel" = 462058435;
- "Canva" = 897446215;
 }
