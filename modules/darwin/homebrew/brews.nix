@@ -2,4 +2,5 @@
   "wget"
   "gh"
   "nvm"
+  "fastfetch"
 ]
