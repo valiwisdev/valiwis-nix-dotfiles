@@ -3,10 +3,6 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-  };
-
-  catppuccin.starship = {
-    enable = true;
-    flavor = "mocha";
+    settings = pkgs.lib.importTOML ./config/starship.toml;
   };
 }
