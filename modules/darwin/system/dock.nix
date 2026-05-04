@@ -8,6 +8,7 @@
 
     persistent-apps = [
       "/System/Applications/App Store.app"
+      "/System/Applications/System Settings.app"
       "/Applications/Microsoft Edge.app"
       "/Applications/Microsoft Word.app"
       "/Applications/Microsoft Excel.app"
