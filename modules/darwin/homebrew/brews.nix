@@ -3,4 +3,5 @@
   "gh"
   "nvm"
   "fastfetch"
+  "tmux"
 ]
