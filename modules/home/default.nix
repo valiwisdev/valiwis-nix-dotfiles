@@ -6,6 +6,9 @@
     ./programs/ghostty.nix
     ./programs/vscode.nix
     ./programs/zsh.nix
+    ./programs/fzf.nix
+    ./programs/zoxide.nix
+    ./programs/starship.nix
   ];
 
 
@@ -13,5 +16,5 @@
   home.stateVersion = "25.11";
   home.packages = with pkgs; [];
   programs.home-manager.enable = true;
-
+  xdg.enable = true;
 }
