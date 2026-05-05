@@ -6,6 +6,7 @@
 		./environment.nix
 		./fonts.nix
 		./programs.nix
+		./wallpaper.nix
 	];
 
 	system.stateVersion = 6;
