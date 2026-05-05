@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-  wallpaper = ../../../wallpapers/catcolors.png;
+  wallpaper = ./wallpapers/catppuccintotoro.png;
 
   setWallpaper = pkgs.writeShellScriptBin "set-wallpaper" ''
     set -euo pipefail
