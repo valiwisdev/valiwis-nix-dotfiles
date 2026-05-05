@@ -1,6 +1,6 @@
 # Valiwis Nix Dotfiles
 
-> A small, calm macOS setup for a tidy terminal, a friendly editor, and a machine that feels consistent every time you open it.
+
 
 Declarative macOS setup powered by `nix-darwin`, `home-manager`, and `nix-homebrew`.
 
