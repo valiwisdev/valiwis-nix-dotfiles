@@ -106,7 +106,7 @@ These are the values that make the machine feel like home.
 <details open>
 <summary>Home Manager Settings</summary>
 
-- Git is configured with the author identity `valiwisdev`, so commits stay consistent without documenting a personal email address here. See [modules/home/programs/git.nix](modules/home/programs/git.nix).
+- Git is configured with the author identity `valiwisdev`. See [modules/home/programs/git.nix](modules/home/programs/git.nix).
 - Ghostty is configured with JetBrains Mono Nerd Font, a larger font size, translucent blurred window styling, and the Catppuccin Mocha theme. See [modules/home/programs/ghostty.nix](modules/home/programs/ghostty.nix).
 - VS Code uses a curated extension set and editor preferences such as Catppuccin Mocha, autosave, larger fonts, and telemetry disabled. See [modules/home/programs/vscode.nix](modules/home/programs/vscode.nix).
 - Zsh is set up with syntax highlighting, Oh My Zsh plugins, and environment bootstrap for NVM and the Homebrew PATH. See [modules/home/programs/zsh.nix](modules/home/programs/zsh.nix).
