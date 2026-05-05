@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, ... }:
 
 let
   wallpaper = ./wallpapers/catcolors.png;
