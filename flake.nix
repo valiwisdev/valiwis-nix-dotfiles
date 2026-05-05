@@ -48,6 +48,7 @@
 
         modules = [
           ./modules/darwin
+          ./modules/darwin/system/wallpaper.nix
 
           nix-homebrew.darwinModules.nix-homebrew
           {
