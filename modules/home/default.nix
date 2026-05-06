@@ -10,7 +10,7 @@
     ./programs/zoxide.nix
     ./programs/starship.nix
     ./programs/tmux.nix
-    ./programs/obs.nix
+    ./programs/opencode.nix
   ];
 
 
