@@ -7,6 +7,7 @@
 		./fonts.nix
 		./programs.nix
 		./wallpaper.nix
+		./shellaliases.nix
 	];
 
 	system.stateVersion = 6;
