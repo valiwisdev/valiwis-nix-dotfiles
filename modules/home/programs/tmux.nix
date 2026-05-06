@@ -1,9 +1,8 @@
 {
-  programs.opencode = {
+  programs.tmux = {
     enable = true;
   };
-
-  catppuccin.opencode = {
+  catppuccin.tmux = {
     enable = true;
     flavor = "mocha";
   };
