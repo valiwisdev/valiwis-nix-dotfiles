@@ -18,6 +18,8 @@
       ];
     };
 
+    shellAliases = import ./config/aliases.nix;
+
     initContent = ''
       export HISTTIMEFORMAT="[%F %T] "
       setopt HIST_FIND_NO_DUPS
