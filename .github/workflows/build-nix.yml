@@ -1,7 +1,7 @@
 name: Build Nix Mac OS Settings
 on:
   push:
-    branches: [build-nix]
+    branches: [main]
 jobs:
     build:
         runs-on: macos-latest
