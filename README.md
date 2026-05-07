@@ -26,7 +26,7 @@ xcode-select --install
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 git clone https://github.com/valiwisdev/valiwis-nix-dotfiles.git
 cd valiwis-nix-dotfiles
-nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#valiwis
+sudo darwin-rebuild switch --flake .#valiwis
 ```
 
 ---
@@ -55,7 +55,7 @@ cd valiwis-nix-dotfiles
 ### 4) Bootstrap your system
 
 ```bash
-nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#valiwis
+sudo darwin-rebuild switch --flake .#valiwis
 ```
 
 ---
@@ -65,8 +65,8 @@ nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#va
 
 | Task | Command |
 | --- | --- |
-| Apply local configuration changes | `darwin-rebuild switch --flake .#valiwis` |
-| Update flake inputs and apply | `nix flake update` then `darwin-rebuild switch --flake .#valiwis` |
+| Apply local configuration changes | `sudo darwin-rebuild switch --flake .#valiwis` |
+| Update flake inputs and apply | `nix flake update` then `sudo darwin-rebuild switch --flake .#valiwis` |
 | Inspect flake outputs | `nix flake show` |
 
 ---
