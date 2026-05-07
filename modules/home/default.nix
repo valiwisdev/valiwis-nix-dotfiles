@@ -9,6 +9,7 @@
     ./programs/fzf.nix
     ./programs/zoxide.nix
     ./programs/starship.nix
+    ./programs/tmux.nix
   ];
 
 

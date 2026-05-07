@@ -21,8 +21,6 @@ Declarative macOS setup powered by `nix-darwin`, `home-manager`, and `nix-homebr
 
 ## Quick Start
 
-If you want the fastest path from fresh Mac to finished setup:
-
 ```bash
 xcode-select --install
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
@@ -34,8 +32,6 @@ nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#va
 ---
 
 ## Fresh Install (Step-by-Step)
-
-Use this if you prefer a slower, roomier setup flow.
 
 ### 1) Install Xcode Command Line Tools
 
@@ -66,7 +62,6 @@ nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#va
 
 ## Daily Workflow
 
-The usual maintenance loop stays intentionally small.
 
 | Task | Command |
 | --- | --- |
@@ -77,8 +72,6 @@ The usual maintenance loop stays intentionally small.
 ---
 
 ## Settings at a Glance
-
-These are the values that make the machine feel like home.
 
 | Setting | Value | Defined in |
 | --- | --- | --- |
