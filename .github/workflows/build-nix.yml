@@ -14,6 +14,6 @@ jobs:
             - uses: DeterminateSystems/magic-nix-cache-action@main
             - uses: DeterminateSystems/flake-checker-action@main
             - name: Build Nix Flake with darwin-rebuild
-              run: sudo darwin-rebuild switch --flake .#valiwis
+              run: sudo nix run github:LnL7/nix-darwin/master#darwin-rebuild -- switch --flake .#valiwis
 
         
