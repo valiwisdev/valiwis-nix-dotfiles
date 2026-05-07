@@ -88,7 +88,7 @@ nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#va
 - `nix-darwin` system configuration with `allowUnfree = true`, so proprietary packages can be installed. See [modules/darwin/system/default.nix](modules/darwin/system/default.nix).
 - `nix-vscode-extensions` overlay, which makes VS Code Marketplace packages available in Nix. See [flake.nix](flake.nix).
 - Dock preferences that keep the workspace tidy by disabling recents, showing hidden files, and pinning a curated set of apps plus Downloads. See [modules/darwin/system/dock.nix](modules/darwin/system/dock.nix).
-- `JetBrains Mono Nerd Font` for consistent terminal and editor typography. See [modules/darwin/system/fonts.nix](modules/darwin/system/fonts.nix).
+- `JetBrains Mono Nerd Font` for consistent terminal and editor typography. See  [modules/darwin/system/fonts.nix](modules/darwin/system/fonts.nix).
 - Automatic wallpaper setup during activation, so the desktop background is refreshed every time the system switches. See [modules/darwin/system/wallpaper.nix](modules/darwin/system/wallpaper.nix).
 - `nix-homebrew` integration with cleanup, auto-update, and upgrade behavior enabled. See [flake.nix](flake.nix).
 - Brew packages for day-to-day CLI work: `wget`, `gh`, `nvm`, `fastfetch`, and `tmux`. See [modules/darwin/homebrew/brews.nix](modules/darwin/homebrew/brews.nix).
