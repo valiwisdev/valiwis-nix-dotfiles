@@ -1,0 +1,19 @@
+name: Build Nix Mac OS Settings
+on:
+  push:
+    branches: [build-nix]
+jobs:
+    build:
+        runs-on: macos-latest
+        permissions:
+            id-token: write
+            contents: read
+        steps:
+            - uses: actions/checkout@v6.0.2
+            - uses: DeterminateSystems/nix-installer-action@main
+            - uses: DeterminateSystems/magic-nix-cache-action@main
+            - uses: DeterminateSystems/flake-checker-action@main
+            - name: Build Nix Flake with darwin-rebuild
+              run: nix run github:nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#valiwis
+
+        
