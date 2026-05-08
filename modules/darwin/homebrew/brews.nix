@@ -4,4 +4,5 @@
   "nvm"
   "fastfetch"
   "tmux"
+  "mas"
 ]
