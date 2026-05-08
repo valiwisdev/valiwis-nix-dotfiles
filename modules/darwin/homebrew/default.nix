@@ -4,7 +4,7 @@
 
     brews = import ./brews.nix;
     casks = import ./casks.nix;
-    masApps = import ./mas-apps.nix;
+    masApps = import ./mas.nix;
 
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = true;
