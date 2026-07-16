@@ -1,5 +1,5 @@
 [
-  "docker-desktop"
+  "orbstack"
   "spotify"
   "discord"
   "microsoft-edge"
