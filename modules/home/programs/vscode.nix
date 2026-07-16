@@ -7,7 +7,6 @@
             extensions = with pkgs.vscode-marketplace; [
                 alexisvt.flutter-snippets
                 antfu.icons-carbon
-                arcticicestudio.nord-visual-studio-code
                 astro-build.astro-vscode
                 batisteo.vscode-django
                 bbenoist.nix
@@ -49,6 +48,8 @@
                 openai.chatgpt
                 redhat.vscode-yaml
                 shd101wyy.markdown-preview-enhanced
+                theqtcompany.qt-core
+                theqtcompany.qt-qml
                 sonarsource.sonarlint-vscode
                 sst-dev.opencode
                 svelte.svelte-vscode
@@ -56,6 +57,7 @@
                 unifiedjs.vscode-mdx
                 vue.volar
                 xelad0m.jupyter-toc
+                tamasfe.even-better-toml
             ];
 
             userSettings = {
