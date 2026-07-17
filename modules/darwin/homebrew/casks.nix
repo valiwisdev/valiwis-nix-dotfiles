@@ -10,4 +10,5 @@
   "obs"
   "wireshark-app"
   "kiro-cli"
+  "utm"
 ]
