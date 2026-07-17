@@ -8,7 +8,6 @@
   "ghostty"
   "raycast"
   "obs"
-  "wireshark-app"
   "kiro-cli"
   "utm"
 ]
