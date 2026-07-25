@@ -3,11 +3,9 @@
   "spotify"
   "discord"
   "microsoft-edge"
-  "chatgpt"
   "notion"
   "ghostty"
   "raycast"
   "obs"
-  "kiro-cli"
   "utm"
 ]

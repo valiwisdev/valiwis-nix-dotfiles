@@ -20,7 +20,6 @@
       "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
       "/Applications/OrbStack.app"
       "/Applications/Ghostty.app"
-      "/Applications/Kiro CLI.app"
       "/System/Applications/System Settings.app"
     ];
 

@@ -5,4 +5,5 @@
   "fastfetch"
   "tmux"
   "mas"
+  "ollama"
 ]

@@ -1,22 +1,29 @@
-{ pkgs, username, hostname, localHostName, system, inputs, ... }:
+{
+  pkgs,
+  username,
+  hostname,
+  localHostName,
+  system,
+  inputs,
+  ...
+}:
 
 {
-	imports = [
-		./dock.nix
-		./environment.nix
-		./fonts.nix
-		./programs.nix
-		./wallpaper.nix
-	];
+  imports = [
+    ./dock.nix
+    ./environment.nix
+    ./fonts.nix
+    ./programs.nix
+    ./wallpaper.nix
+  ];
 
-	system.stateVersion = 6;
-	system.primaryUser = username;
+  system.primaryUser = username;
   networking.hostName = hostname;
-	networking.localHostName = localHostName;
+  networking.localHostName = localHostName;
   nixpkgs.hostPlatform = system;
-	nixpkgs.config.allowUnfree = true;
-	nixpkgs.overlays = [
-		inputs.nix-vscode-extensions.overlays.default
-	];
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [
+    inputs.nix-vscode-extensions.overlays.default
+  ];
 
 }
