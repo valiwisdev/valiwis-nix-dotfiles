@@ -17,6 +17,7 @@
     ./wallpaper.nix
   ];
 
+  system.stateVersion = 6;
   system.primaryUser = username;
   networking.hostName = hostname;
   networking.localHostName = localHostName;

@@ -57,6 +57,7 @@
                 vue.volar
                 xelad0m.jupyter-toc
                 tamasfe.even-better-toml
+                
             ];
 
             userSettings = {
