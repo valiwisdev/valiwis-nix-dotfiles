@@ -3,6 +3,7 @@
 {
     programs.vscode = {
         enable = true;
+        package = null;
         profiles.default = {
             extensions = with pkgs.vscode-marketplace; [
                 alexisvt.flutter-snippets

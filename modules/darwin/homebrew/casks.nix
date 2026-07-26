@@ -8,4 +8,5 @@
   "raycast"
   "obs"
   "utm"
+  "visual-studio-code"
 ]
