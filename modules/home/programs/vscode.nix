@@ -1,9 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, unstablePkgs, ... }:
 
 {
     programs.vscode = {
         enable = true;
-        package = pkgs.vscode;
+        package = unstablePkgs.vscode;
         profiles.default = {
             extensions = with pkgs.vscode-marketplace; [
                 alexisvt.flutter-snippets

@@ -2,6 +2,7 @@
   description = "Valiwis' Nix dotfiles for macOS";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-25.11-darwin";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
@@ -30,6 +31,7 @@
     nix-vscode-extensions,
     mac-app-util,
     catppuccin,
+    nixpkgs-unstable,
     ...
   }:
   let
@@ -38,6 +40,10 @@
     hostname = "valiwis";
     localHostName = "valiwis-mac-mini";
     home = "/Users/${username}";
+    unstablePkgs = import nixpkgs-unstable {
+      inherit system;
+      config.allowUnfree = true;
+    };
   in {
     darwinConfigurations = {
       ${hostname} = nix-darwin.lib.darwinSystem {
@@ -75,7 +81,7 @@
             users.users.${username}.home = home;
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit username; };
+            home-manager.extraSpecialArgs = { inherit username unstablePkgs; };
             home-manager.users.${username} = import ./modules/home;
             home-manager.sharedModules = [ mac-app-util.homeManagerModules.default catppuccin.homeModules.catppuccin ];
           }
