@@ -14,7 +14,6 @@
       "/Applications/Canva.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
-      "/Applications/ChatGPT.app"
       "/Applications/Notion.app"
       "/Applications/OBS.app"
       "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
