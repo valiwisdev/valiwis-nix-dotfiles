@@ -16,7 +16,7 @@
       "/Applications/Discord.app"
       "/Applications/Notion.app"
       "/Applications/OBS.app"
-      "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
+      "/Applications/Visual Studio Code.app"
       "/Applications/OrbStack.app"
       "/Applications/Ghostty.app"
       "/System/Applications/System Settings.app"
