@@ -5,7 +5,7 @@
 		uv
 		zoxide
 		starship
-		nixfmt-rfc-style
+		nixfmt
 		fzf
 	];
 }
