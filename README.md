@@ -52,10 +52,16 @@ git clone https://github.com/valiwisdev/valiwis-nix-dotfiles.git
 cd valiwis-nix-dotfiles
 ```
 
-### 4) Bootstrap your system
+### 4) Bootstrap your system 
 
 ```bash
-nix run nix-darwin -- switch --flake .#valiwis
+sudo nix run nix-darwin -- switch --flake .#valiwis
+```
+
+### 5) Command to rebuild your system
+
+```bash
+sudo darwin-rebuild switch --flake .#valiwis
 ```
 
 ---
