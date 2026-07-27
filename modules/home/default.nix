@@ -14,7 +14,7 @@
 
 
   home.username = username;
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
   home.packages = with pkgs; [];
   programs.home-manager.enable = true;
   xdg.enable = true;
