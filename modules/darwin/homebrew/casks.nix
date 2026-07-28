@@ -7,5 +7,4 @@
   "ghostty"
   "raycast"
   "obs"
-  "utm"
 ]
