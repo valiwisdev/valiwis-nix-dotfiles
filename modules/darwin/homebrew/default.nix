@@ -7,7 +7,7 @@
     masApps = import ./mas.nix;
 
     onActivation.cleanup = "zap";
-    onActivation.autoUpdate = true;
+    onActivation.autoUpdate = false;
     onActivation.upgrade = true;
   };
 }
