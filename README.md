@@ -82,7 +82,6 @@ Use this to refresh the Homebrew inputs and apply the updated system configurati
 ```bash
 nix flake update \
 	nix-homebrew \
-	nix-homebrew/brew-src \
 	homebrew-core \
 	homebrew-cask &&
 sudo darwin-rebuild switch --flake .#valiwis
