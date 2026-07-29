@@ -75,6 +75,15 @@ sudo darwin-rebuild switch --flake .#valiwis
 | Update flake inputs and apply | `nix flake update` then `sudo darwin-rebuild switch --flake .#valiwis` |
 | Inspect flake outputs | `nix flake show` |
 
+## Update Homebrew
+
+Use this to refresh Homebrew taps and apply the updated system configuration:
+
+```bash
+nix flake update nix-homebrew homebrew-core homebrew-cask
+sudo darwin-rebuild switch --flake .#valiwis
+```
+
 ---
 
 ## Settings at a Glance
