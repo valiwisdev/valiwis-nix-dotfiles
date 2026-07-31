@@ -7,4 +7,5 @@
   "ghostty"
   "raycast"
   "obs"
+  "tailscale-app"
 ]

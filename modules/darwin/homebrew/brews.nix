@@ -6,5 +6,4 @@
   "tmux"
   "mas"
   "ollama"
-  "tailscale"
 ]
