@@ -8,12 +8,14 @@
 
     persistent-apps = [
       "/System/Applications/App Store.app"
+      "/Applications/Microsoft Outlook.app"
       "/Applications/Microsoft Edge.app"
       "/Applications/Microsoft Word.app"
       "/Applications/Microsoft Excel.app"
       "/Applications/Canva.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
+      "/Applications/WhatsApp Messenger.app"
       "/Applications/Notion.app"
       "/Applications/OBS.app"
       "${home}/Applications/Home Manager Apps/Visual Studio Code.app"
