@@ -1,0 +1,1 @@
+/home/valiwis/.config/omarchy/current/theme/neovim.lua
