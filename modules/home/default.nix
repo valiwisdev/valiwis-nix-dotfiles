@@ -11,6 +11,7 @@
     ./programs/starship.nix
     ./programs/tmux.nix
     ./programs/neovim.nix
+    ./programs/mise.nix
   ];
 
 
