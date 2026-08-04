@@ -28,7 +28,4 @@
 
   xdg.configFile."nvim/lazyvim.json".source =
     ./config/nvim/lazyvim.json;
-
-  xdg.configFile."nvim/lazy-lock.json".source =
-    ./config/nvim/lazy-lock.json;
 }
