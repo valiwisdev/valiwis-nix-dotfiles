@@ -20,7 +20,7 @@
     ];
   };
 
-  xdg.configFile."nvim".source =
-    config.lib.file.mkOutOfStoreSymlink
-     "/Users/valiwis/valiwis-nix-dotfiles/modules/home/config/nvim";
+ xdg.configFile."nvim".source =
+  config.lib.file.mkOutOfStoreSymlink
+    "/Users/valiwis/valiwis-nix-dotfiles/modules/home/config/nvim";
 }
