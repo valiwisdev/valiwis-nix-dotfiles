@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.neovim = {
@@ -20,12 +20,7 @@
     ];
   };
 
-  xdg.configFile."nvim/init.lua".source =
-    ./config/nvim/init.lua;
-
-  xdg.configFile."nvim/lua".source =
-    ./config/nvim/lua;
-
-  xdg.configFile."nvim/lazyvim.json".source =
-    ./config/nvim/lazyvim.json;
+  xdg.configFile."nvim".source =
+    config.lib.file.mkOutOfStoreSymlink
+      "${config.home.homeDirectory}/valiwis-nix-dotfiles/modules/home/config/nvim";
 }
