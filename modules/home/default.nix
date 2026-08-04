@@ -1,4 +1,4 @@
-{ pkgs, username,... }:
+{ pkgs, username, home, ... }:
 
 {
   imports = [
@@ -16,7 +16,7 @@
 
   home.username = username;
   home.stateVersion = "26.05";
-  home.homeDirectory = "/Users/${username}";
+  home.homeDirectory = home;
   home.packages = with pkgs; [];
   programs.home-manager.enable = true;
   xdg.enable = true;

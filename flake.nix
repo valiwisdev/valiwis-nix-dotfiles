@@ -96,7 +96,7 @@
               users.users.${username}.home = home;
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.extraSpecialArgs = { inherit username unstablePkgs; };
+              home-manager.extraSpecialArgs = { inherit username home unstablePkgs; };
               home-manager.users.${username} = import ./modules/home;
               home-manager.sharedModules = [
                 mac-app-util.homeManagerModules.default
