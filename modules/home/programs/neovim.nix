@@ -22,5 +22,5 @@
 
   xdg.configFile."nvim".source =
     config.lib.file.mkOutOfStoreSymlink
-      "${config.home.homeDirectory}/valiwis-nix-dotfiles/modules/home/config/nvim";
+     "/Users/valiwis/valiwis-nix-dotfiles/modules/home/config/nvim";
 }
