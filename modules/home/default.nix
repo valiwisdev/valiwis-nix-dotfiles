@@ -16,6 +16,7 @@
 
   home.username = username;
   home.stateVersion = "26.05";
+  home.homeDirectory = "/Users/${username}";
   home.packages = with pkgs; [];
   programs.home-manager.enable = true;
   xdg.enable = true;
