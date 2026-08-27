@@ -9,9 +9,7 @@
         alexisvt.flutter-snippets
         antfu.icons-carbon
         astro-build.astro-vscode
-        batisteo.vscode-django
         bbenoist.nix
-        bigonesystems.django
         bjarne.vantablack-omarchy
         bradlc.vscode-tailwindcss
         catppuccin.catppuccin-vsc
@@ -24,7 +22,6 @@
         docker.docker
         dsznajder.es7-react-js-snippets
         esbenp.prettier-vscode
-        fastapilabs.fastapi-vscode
         github.vscode-github-actions
         icrawl.discord-vscode
         jnoortheen.nix-ide
@@ -58,7 +55,6 @@
         vue.volar
         xelad0m.jupyter-toc
         tamasfe.even-better-toml
-
       ];
 
       userSettings = {
