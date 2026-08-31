@@ -20,7 +20,7 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+  
     mac-app-util.url = "github:hraban/mac-app-util";
     catppuccin.url = "github:catppuccin/nix/release-26.05";
   };
@@ -33,7 +33,6 @@
       nix-homebrew,
       homebrew-core,
       homebrew-cask,
-      nix-vscode-extensions,
       mac-app-util,
       catppuccin,
       nixpkgs-unstable,

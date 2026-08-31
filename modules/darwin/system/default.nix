@@ -26,7 +26,4 @@
     allowUnfree = true;
     android_sdk.accept_license = true;
   };
-  nixpkgs.overlays = [
-    inputs.nix-vscode-extensions.overlays.default
-  ];
 }
