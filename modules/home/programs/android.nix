@@ -5,7 +5,6 @@ let
     
     platformVersions = [ "36" ];
     buildToolsVersions = [ "36.0.0" ];
-    cmdLineToolsVersion = "22.0";
 
     includeSources = false;
     includeNDK = false;
