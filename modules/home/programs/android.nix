@@ -2,9 +2,9 @@
 
 let
   androidComposition = pkgs.androidenv.composeAndroidPackages {
-    platformVersions = [ "latest" ];
+    platformVersions = [ "36" "latest" ];
 
-    includeSources = true;
+    includeSources = false;
     includeNDK = false;
 
     includeEmulator = true;
