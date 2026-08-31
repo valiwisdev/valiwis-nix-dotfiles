@@ -22,9 +22,11 @@
   networking.hostName = hostname;
   networking.localHostName = localHostName;
   nixpkgs.hostPlatform = system;
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    android_sdk.accept_license = true;
+  };
   nixpkgs.overlays = [
     inputs.nix-vscode-extensions.overlays.default
   ];
-
 }
