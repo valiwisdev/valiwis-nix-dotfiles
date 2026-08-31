@@ -2,7 +2,7 @@
 
 let
   androidComposition = pkgs.androidenv.composeAndroidPackages {
-    platformVersions = [ "36" "latest" ];
+    platformVersions = [ "latest" ];
 
     includeSources = true;
     includeNDK = false;
@@ -19,14 +19,17 @@ in
 {
   home.packages = [
     androidSdk
+    pkgs.jdk21
   ];
 
   home.sessionVariables = {
+    JAVA_HOME = "${pkgs.jdk21}";
     ANDROID_HOME = "${androidSdk}/libexec/android-sdk";
     ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
   };
 
   home.sessionPath = [
+    "${pkgs.jdk21}/bin"
     "${androidSdk}/libexec/android-sdk/platform-tools"
     "${androidSdk}/libexec/android-sdk/emulator"
     "${androidSdk}/libexec/android-sdk/cmdline-tools/latest/bin"

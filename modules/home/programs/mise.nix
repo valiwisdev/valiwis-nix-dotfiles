@@ -7,6 +7,7 @@
       tools = {
         node = "lts";
         python = "3.14";
+        flutter = "latest";
       };
     };
   };
