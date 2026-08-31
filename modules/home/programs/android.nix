@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 let
   androidComposition = pkgs.androidenv.composeAndroidPackages {
