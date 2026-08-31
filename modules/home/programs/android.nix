@@ -3,6 +3,7 @@
 let
   androidComposition = pkgs.androidenv.composeAndroidPackages {
     platformVersions = [ "36" ];
+    buildToolsVersions = [ "36.0.0" ];
 
     includeSources = false;
     includeNDK = false;
