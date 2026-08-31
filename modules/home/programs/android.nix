@@ -28,6 +28,7 @@ in
     JAVA_HOME = "${pkgs.jdk21}";
     ANDROID_HOME = "${androidSdk}/libexec/android-sdk";
     ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
+    ANDROID_AVD_HOME = "${config.xdg.configHome}/.android/avd";
   };
 
   home.sessionPath = [
