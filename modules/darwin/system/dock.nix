@@ -12,6 +12,7 @@
       "/Applications/Microsoft Word.app"
       "/Applications/Microsoft Excel.app"
       "/Applications/Canva.app"
+      "/Applications/Figma.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
       "/Applications/WhatsApp.app"

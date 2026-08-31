@@ -8,4 +8,5 @@
   "raycast"
   "obs"
   "visual-studio-code"
+  "figma"
 ]
