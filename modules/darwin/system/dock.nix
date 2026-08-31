@@ -2,7 +2,7 @@
 
 {
   system.defaults.dock = {
-    autohide = false;
+    autohide = true;
     show-recents = false;
     showhidden = true; 
 
