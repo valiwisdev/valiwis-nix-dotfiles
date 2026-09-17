@@ -22,7 +22,7 @@
     };
   
     mac-app-util.url = "github:hraban/mac-app-util";
-    mac-app-util.inputs.nixpkgs.follows = "nixpkgs";
+    mac-app-util.inputs.nixpkgs.follows = "nixpkgs-unstable";
     catppuccin.url = "github:catppuccin/nix/release-26.05";
   };
 
