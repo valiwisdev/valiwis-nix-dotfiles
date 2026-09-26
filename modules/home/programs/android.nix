@@ -2,39 +2,60 @@
 
 let
   androidComposition = pkgs.androidenv.composeAndroidPackages {
-    
-    platformVersions = [ "36" ];
-    buildToolsVersions = [ "36.0.0" ];
-
+    platformVersions = [ "34" "35" ];
+    buildToolsVersions = [ "34.0.0" "35.0.0"];
     includeSources = false;
-    includeNDK = false;
-
+    includeCmake = true;
+    cmakeVersions = [ "3.22.1" ];
+    includeNDK = true;
+    ndkVersions = [ "28.2.13676358" ];
     includeEmulator = true;
     includeSystemImages = true;
-
     systemImageTypes = [ "google_apis" ];
     abiVersions = [ "arm64-v8a" ];
   };
 
   androidSdk = androidComposition.androidsdk;
+  sdkRoot = "${androidSdk}/libexec/android-sdk";
 in
 {
-  home.packages = [
+  home.packages = with pkgs; [
     androidSdk
-    pkgs.jdk21
+    jdk21
+    ninja
+    pkg-config
+    gnumake
+    git
+    python3
+    curl
+    wget
+    unzip
+    zip
+    file
+    which
   ];
 
   home.sessionVariables = {
     JAVA_HOME = "${pkgs.jdk21}";
-    ANDROID_HOME = "${androidSdk}/libexec/android-sdk";
-    ANDROID_SDK_ROOT = "${androidSdk}/libexec/android-sdk";
-    ANDROID_AVD_HOME = "${config.xdg.configHome}/.android/avd";
+
+    ANDROID_HOME = sdkRoot;
+    ANDROID_SDK_ROOT = sdkRoot;
+
+    ANDROID_NDK_ROOT =
+      "${sdkRoot}/ndk/28.2.13676358";
+
+    ANDROID_NDK_HOME =
+      "${sdkRoot}/ndk/28.2.13676358";
+
+    ANDROID_AVD_HOME =
+      "${config.xdg.configHome}/.android/avd";
   };
 
   home.sessionPath = [
     "${pkgs.jdk21}/bin"
-    "${androidSdk}/libexec/android-sdk/platform-tools"
-    "${androidSdk}/libexec/android-sdk/emulator"
-    "${androidSdk}/libexec/android-sdk/cmdline-tools/latest/bin"
+
+    "${sdkRoot}/platform-tools"
+    "${sdkRoot}/emulator"
+    "${sdkRoot}/cmdline-tools/latest/bin"
   ];
 }
