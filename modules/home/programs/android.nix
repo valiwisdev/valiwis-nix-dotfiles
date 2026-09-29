@@ -2,8 +2,8 @@
 
 let
   androidComposition = pkgs.androidenv.composeAndroidPackages {
-    platformVersions = [ "34" "35" ];
-    buildToolsVersions = [ "34.0.0" "35.0.0"];
+    platformVersions = [ "34" "35" "36"];
+    buildToolsVersions = [ "34.0.0" "35.0.0" "36.0.0" ];
     includeSources = false;
     includeCmake = true;
     cmakeVersions = [ "3.22.1" ];

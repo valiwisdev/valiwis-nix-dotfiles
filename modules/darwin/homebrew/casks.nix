@@ -8,5 +8,6 @@
   "raycast"
   "obs"
   "visual-studio-code"
-  "figma"
+  "figma"  
+  "chatgpt"
 ]
