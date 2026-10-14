@@ -9,18 +9,16 @@
     persistent-apps = [
       "/System/Applications/App Store.app"
       "/Applications/Microsoft Edge.app"
-      "/Applications/Microsoft Word.app"
-      "/Applications/Microsoft Excel.app"
-      "/Applications/Canva.app"
-      "/Applications/Figma.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
       "/Applications/WhatsApp.app"
       "/Applications/Notion.app"
       "/Applications/OBS.app"
       "/Applications/Visual Studio Code.app"
+      "/Applications/ChatGPT.app"
       "/Applications/OrbStack.app"
       "/Applications/Ghostty.app"
+      "/Applications/Rustdesk.app"
       "/System/Applications/System Settings.app"
     ];
 

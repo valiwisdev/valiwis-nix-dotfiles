@@ -8,6 +8,7 @@
   "raycast"
   "obs"
   "visual-studio-code"
-  "figma"  
+  "android-studio"
   "chatgpt"
+  "rustdesk"
 ]
