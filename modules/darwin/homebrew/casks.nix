@@ -11,4 +11,5 @@
   "android-studio"
   "chatgpt"
   "rustdesk"
+  "claude"
 ]
