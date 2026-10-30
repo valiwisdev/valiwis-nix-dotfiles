@@ -8,6 +8,8 @@
         node = "lts";
         python = "3.14";
         flutter = "latest";
+        pnpm = "latest";
+        uv = "latest";
       };
     };
   };

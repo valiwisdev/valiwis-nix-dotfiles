@@ -12,4 +12,7 @@
   "rustdesk"
   "claude-code"
   "codex"
+  "openchamber"
+  "claude"
+  "chatgpt"
 ]

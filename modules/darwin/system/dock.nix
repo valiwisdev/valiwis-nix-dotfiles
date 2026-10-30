@@ -11,7 +11,6 @@
       "/Applications/Microsoft Edge.app"
       "/Applications/Spotify.app"
       "/Applications/Discord.app"
-      "/Applications/WhatsApp.app"
       "/Applications/Notion.app"
       "/Applications/OBS.app"
       "/Applications/Visual Studio Code.app"

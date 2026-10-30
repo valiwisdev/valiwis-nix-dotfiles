@@ -7,5 +7,4 @@
   "lazysql"
   "herdr"
   "opencode"
-  ""
 ]
