@@ -16,6 +16,7 @@
   home.username = username;
   home.stateVersion = "26.05";
   home.homeDirectory = home;
+  home.sessionVariables.PNPM_HOME = "${home}/.local/share/pnpm";
   home.sessionPath = [ "${home}/.local/share/pnpm/bin" ];
   home.packages = with pkgs; [];
   programs.home-manager.enable = true;
