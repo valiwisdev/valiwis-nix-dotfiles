@@ -2,8 +2,8 @@
   "wget"
   "gh"
   "nvm"
-  "fastfetch"
   "tmux"
   "mas"
   "lazysql"
+  "herdr"
 ]

@@ -16,6 +16,7 @@
       "/Applications/OBS.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/ChatGPT.app"
+      "/Applications/Claude.app"
       "/Applications/OrbStack.app"
       "/Applications/Ghostty.app"
       "/Applications/Rustdesk.app"
