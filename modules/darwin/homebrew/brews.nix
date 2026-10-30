@@ -6,4 +6,6 @@
   "mas"
   "lazysql"
   "herdr"
+  "opencode"
+  ""
 ]

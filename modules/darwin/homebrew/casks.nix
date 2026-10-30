@@ -9,7 +9,7 @@
   "obs"
   "visual-studio-code"
   "android-studio"
-  "chatgpt"
   "rustdesk"
-  "claude"
+  "claude-code"
+  "codex"
 ]
